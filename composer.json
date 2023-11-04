@@ -1,0 +1,18 @@
+{
+    "name": "vendor/karcewicz-bingo",
+    "description": "bingo na zajęcia dr.inż. Karcewicza",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\KarcewiczBingo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jakub Moszyński",
+            "email": "kontakt@jakubmoszynski.pl"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}

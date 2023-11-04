@@ -1,0 +1,72 @@
+body{
+    height: 100hv;
+    max-width: 100%;
+    background-image: linear-gradient(to bottom, red 30px, white 30px);
+  background-size: 100% 60px; /* Wysokość paska * 2 */
+  background-repeat: repeat-y;
+}
+.header{
+    height: 100px;
+    width: 110%;
+    transform: rotate(-4deg);
+    top: -10px;
+    left: -70px;
+    background-color: rgb(27, 0, 177);
+}
+.header h1{
+    color: white;
+}
+#pasek-right{
+    right: 0px;
+}
+#pasek-left{
+    left: 0px;
+}
+.pasek{
+    z-index: 1;
+    background-color: rgb(27, 0, 177);
+    position: absolute;
+    height: 100hv;
+    width: 50px;
+    top:0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gwiazdka{
+    font-size: 30px;
+}
+#bingo {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; 
+    margin: 0px 30%;
+    margin-top: 20%;
+}
+.bingo-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.bingo-item.clicked {
+    background-color: blue;
+    color: white;
+}
+@media(max-width: 992px){
+    .header{
+        left: -38px;
+    }
+    #bingo {
+        grid-gap: 0px; 
+        margin: auto 50px;
+        margin-top: 60%;
+    }
+    .bingo-item {
+        padding: 10px 0px;
+    }
+}
