@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 
 require_once 'env.php';
 
-class Mail{
+class Mailer{
     public function __construct($nazwa) {
         $mail = new PHPMailer(true);
         $mail->isSMTP();                                            //Send usingMAIL_HOST' SMTP

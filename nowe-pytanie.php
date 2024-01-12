@@ -21,9 +21,24 @@ $one = new newEnter();
     <div id="imageTitle" ></div>
 
     <div class="content mt-5">
-        <a href="gra" class="button-74 mb-5" role="button">Zagraj</a> 
-        <a href="nowe-pytanie" class="button-74 mb-5" role="button">Dodaj pytanie</a> 
-        <a href="https://buycoffee.to/qualicc" class="button-74 mb-5" role="button">Postaw kawę</a> 
+        <form class="content" action="add-query.php" method="post">
+            <!-- Email -->
+            <div class="mb-3 button-75">
+                <label for="basic-url" class="form-label">Email (opcjonalny)</label>
+                <div class="input-group">
+                    <input name="email" type="email" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+                <div class="form-text" id="basic-addon4">Podaj jeśli chcesz otrzymać wiadomość o decyjzji w sprawie dodania.</div>
+            </div>
+            <!-- Pytanie -->
+            <div class="mb-3 button-75">
+                <label for="basic-query" class="form-label">Treść</label>
+                <div class="input-group">
+                    <input name="query" type="text" class="form-control" id="basic-query" aria-describedby="basic-addon3 basic-addon4" required>
+                </div>
+            </div>
+            <input class="button-74 mb-3"name="submit" type="submit" value="Wyślij">
+        </form>
 
     </div>
 

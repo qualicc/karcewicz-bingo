@@ -34,5 +34,111 @@
     {
         "id":9,
         "query":"Za mało godzin w semestrze"
+    },
+    {
+        "id":10,
+        "query":"Wspomnienie o swoich dzieciach"
+    },
+    {
+        "id":11,
+        "query":"Negatywnie o Azjatach"
+    },
+    {
+        "id":12,
+        "query":"zagadka do publiczności (ogólnie)"
+    }
+    ,
+    {
+        "id":13,
+        "query":"Linux jako samochód i obsługa jak Kat. B"
+    }
+    ,
+    {
+        "id":14,
+        "query":"Znacie windowsa? To ja wam zadam 3 pytania i na nie odpowiedcie"
+    }
+    ,
+    {
+        "id":15,
+        "query":"hostuje taki serwer..."
+    }
+    ,
+    {
+        "id":16,
+        "query":"Linux cie wita! lub Linux na marsie"
+    }
+    ,
+    {
+        "id":17,
+        "query":"IPv6"
+    }
+    ,
+    {
+        "id":18,
+        "query":"wojna armia zbrojenia"
+    },
+    {
+        "id":19,
+        "query":"Coś negatywnego o programistach"
+    },
+    {
+        "id":20,
+        "query":"Panie! Ale czy ja wyglądam na pedofila?"
+    },
+    {
+        "id":21,
+        "query":"to nie tak że nienawidze programistów ale"
+    },
+    {
+        "id":22,
+        "query":"Niebezpieczny DNS"
+    },
+    {
+        "id":23,
+        "query":"Studenci są leniwi/najgorsi"
+    },
+    {
+        "id":24,
+        "query":"Ktoś mi kiedyś powiedział, że Linux jest niszowy"
+    },
+    {
+        "id":25,
+        "query":"Boomer talk"
+    },
+    {
+        "id":26,
+        "query":"Product placement (jakieś firmy hostingowej)"
+    },
+    {
+        "id":27,
+        "query":"W pracy potem zobaczcie że..."
+    },
+    {
+        "id":28,
+        "query":"Będziecie mieli własną działalność gospodarczą i wtedy"
+    },
+    {
+        "id":29,
+        "query":"W windowsie jest ten sam problem"
+    },
+    {
+        "id":30,
+        "query":"baran"
+    },
+    {
+        "id":31,
+        "query":"diwiołpers"
+    },
+    {
+        "id":32,
+        "query":"Wspomnienie o alkoholu"
+    },
+    {
+        "id":33,
+        "query":"Włoski strajk"
+    },
+    {
+        "id":34,
+        "query":"'Nie obchodzi mnie że mnie wzolnią'"
     }
 ]

@@ -14,4 +14,5 @@ class newEnter extends Connection {
             die("Błąd podczas dodawania rekordu: " . $e->getMessage());
         }
     }
+
 }
