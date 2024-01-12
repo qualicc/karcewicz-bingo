@@ -24,5 +24,5 @@ if(!empty($_POST['query']) &&
         );
     }
 }
-header('Location: index.php');
+header('Location: nowe-pytanie.php');
 ?>

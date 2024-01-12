@@ -1,9 +1,3 @@
-<?php
-require __DIR__ . '/vendor/autoload.php';
-
-use Vendor\KarcewiczBingo\newEnter;
-$one = new newEnter();
-?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
