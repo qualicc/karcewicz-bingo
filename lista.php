@@ -1,14 +1,14 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-use Vendor\KarcewiczBingo\GetList;
+use Vendor\KarcewiczBingo\Communication;
 
 session_start();
 if($_SESSION['ADMIN'] != true)
 {
     header('Location: index.php');
 }
-$obj = new GetList;
+$obj = new Communication;
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -27,20 +27,23 @@ $obj = new GetList;
     <div id="imageTitle" ></div>
     <!-- MESSAGE BOX -->
     <?php
-        if (is_array($_SESSION['message'])) {
-            echo "<div id='message'> <div class='message-box message-" . $_SESSION['message']['type'] . "'>
-            " . $_SESSION['message']['text'] . "
-                <button type='button' id='hide-message-box' class='btn btn-light mt-2 mb-1'>OK!</button>
-            </div></div>";
-            $_SESSION['message'] = false;
-        }
+        if (isset($_SESSION['message'])) {
+            if (is_array($_SESSION['message'])) {
+                echo "<div id='message'> <div class='message-box message-" . $_SESSION['message']['type'] . "'>
+                " . $_SESSION['message']['text'] . "
+                    <button type='button' id='hide-message-box' class='btn btn-light mt-2 mb-1'>OK!</button>
+                </div></div>";
+                $_SESSION['message'] = false;
+            }
 
+        }
+        
 
         $i = 0;
         $lista = $obj -> getList();
     ?>
     <div class="content mt-5">
-        <table>
+        <table class="button-75">
             <tr>
                 <th>#</th>
                 <th>Pytanie</th>
@@ -56,11 +59,18 @@ $obj = new GetList;
 
                         echo "<th>" . $i++ . "</th>"; 
                         echo "<th>" . $one['tresc'] . "</th>"; 
-                        $email = $one['email'] !== null ? "'" . $email . "'" : "Anonim";
+                        if ($one['email'] != null) {
+                            $email = $one['email'];
+                        }
+                        else
+                        {
+                            $email = "Anonim";
+                        }
+                        //print_r($email);
                         echo "<th>" . $email . "</th>"; 
                         echo "<form action='accept-query.php' method='post'> <input type='hidden' name='id' value='" . $one['ID'] . "'>";
-                        echo "<th><input type='submit' name='dodaj' type=button value='Dodaj' class=btn btn-success></th>";
-                        echo "<th><input type='submit' name='usun' type=button value='Usuń' class=btn btn-danger></th>";
+                        echo "<th><input type='submit' name='dodaj' type=button value='Dodaj' class='btn btn-success'></th>";
+                        echo "<th><input type='submit' name='usun' type=button value='Usuń' class='btn btn-danger'></th>";
                         echo "</form>";
 
                         echo "</tr>";

@@ -1,144 +1,138 @@
 [
     {
-        "id":1,
-        "query":"Dziecięca pornografia"
+        "id": 1,
+        "query": "Dzieci\u0119ca pornografia"
     },
     {
-        "id":2,
-        "query":"Router za 700zł"
+        "id": 2,
+        "query": "Router za 700z\u0142"
     },
     {
-        "id":3,
-        "query":"Studenci za mało płacą"
+        "id": 3,
+        "query": "Studenci za ma\u0142o p\u0142ac\u0105"
     },
     {
-        "id":4,
-        "query":"System amerykański jest lepszy"
+        "id": 4,
+        "query": "System ameryka\u0144ski jest lepszy"
     },
     {
-        "id":5,
-        "query":"Służba zdrowia jest w opłakanym stanie"
+        "id": 5,
+        "query": "S\u0142u\u017cba zdrowia jest w op\u0142akanym stanie"
     },
     {
-        "id":6,
-        "query":"Mój brat architekt"
+        "id": 6,
+        "query": "M\u00f3j brat architekt"
     },
     {
-        "id":7,
-        "query":"Jak ktoś nie ma wyobraźni to ja bardzo przepraszam"
+        "id": 7,
+        "query": "Jak kto\u015b nie ma wyobra\u017ani to ja bardzo przepraszam"
     },
     {
-        "id":8,
-        "query":"Aktualizacje telefonów"
+        "id": 8,
+        "query": "Aktualizacje telefon\u00f3w"
     },
     {
-        "id":9,
-        "query":"Za mało godzin w semestrze"
+        "id": 9,
+        "query": "Za ma\u0142o godzin w semestrze"
     },
     {
-        "id":10,
-        "query":"Wspomnienie o swoich dzieciach"
+        "id": 10,
+        "query": "Wspomnienie o swoich dzieciach"
     },
     {
-        "id":11,
-        "query":"Negatywnie o Azjatach"
+        "id": 11,
+        "query": "Negatywnie o Azjatach"
     },
     {
-        "id":12,
-        "query":"zagadka do publiczności (ogólnie)"
-    }
-    ,
-    {
-        "id":13,
-        "query":"Linux jako samochód i obsługa jak Kat. B"
-    }
-    ,
-    {
-        "id":14,
-        "query":"Znacie windowsa? To ja wam zadam 3 pytania i na nie odpowiedcie"
-    }
-    ,
-    {
-        "id":15,
-        "query":"hostuje taki serwer..."
-    }
-    ,
-    {
-        "id":16,
-        "query":"Linux cie wita! lub Linux na marsie"
-    }
-    ,
-    {
-        "id":17,
-        "query":"IPv6"
-    }
-    ,
-    {
-        "id":18,
-        "query":"wojna armia zbrojenia"
+        "id": 12,
+        "query": "zagadka do publiczno\u015bci (og\u00f3lnie)"
     },
     {
-        "id":19,
-        "query":"Coś negatywnego o programistach"
+        "id": 13,
+        "query": "Linux jako samoch\u00f3d i obs\u0142uga jak Kat. B"
     },
     {
-        "id":20,
-        "query":"Panie! Ale czy ja wyglądam na pedofila?"
+        "id": 14,
+        "query": "Znacie windowsa? To ja wam zadam 3 pytania i na nie odpowiedcie"
     },
     {
-        "id":21,
-        "query":"to nie tak że nienawidze programistów ale"
+        "id": 15,
+        "query": "hostuje taki serwer..."
     },
     {
-        "id":22,
-        "query":"Niebezpieczny DNS"
+        "id": 16,
+        "query": "Linux cie wita! lub Linux na marsie"
     },
     {
-        "id":23,
-        "query":"Studenci są leniwi/najgorsi"
+        "id": 17,
+        "query": "IPv6"
     },
     {
-        "id":24,
-        "query":"Ktoś mi kiedyś powiedział, że Linux jest niszowy"
+        "id": 18,
+        "query": "wojna armia zbrojenia"
     },
     {
-        "id":25,
-        "query":"Boomer talk"
+        "id": 19,
+        "query": "Co\u015b negatywnego o programistach"
     },
     {
-        "id":26,
-        "query":"Product placement (jakieś firmy hostingowej)"
+        "id": 20,
+        "query": "Panie! Ale czy ja wygl\u0105dam na pedofila?"
     },
     {
-        "id":27,
-        "query":"W pracy potem zobaczcie że..."
+        "id": 21,
+        "query": "to nie tak \u017ce nienawidze programist\u00f3w ale"
     },
     {
-        "id":28,
-        "query":"Będziecie mieli własną działalność gospodarczą i wtedy"
+        "id": 22,
+        "query": "Niebezpieczny DNS"
     },
     {
-        "id":29,
-        "query":"W windowsie jest ten sam problem"
+        "id": 23,
+        "query": "Studenci s\u0105 leniwi\/najgorsi"
     },
     {
-        "id":30,
-        "query":"baran"
+        "id": 24,
+        "query": "Kto\u015b mi kiedy\u015b powiedzia\u0142, \u017ce Linux jest niszowy"
     },
     {
-        "id":31,
-        "query":"diwiołpers"
+        "id": 25,
+        "query": "Boomer talk"
     },
     {
-        "id":32,
-        "query":"Wspomnienie o alkoholu"
+        "id": 26,
+        "query": "Product placement (jakie\u015b firmy hostingowej)"
     },
     {
-        "id":33,
-        "query":"Włoski strajk"
+        "id": 27,
+        "query": "W pracy potem zobaczcie \u017ce..."
     },
     {
-        "id":34,
-        "query":"'Nie obchodzi mnie że mnie wzolnią'"
+        "id": 28,
+        "query": "B\u0119dziecie mieli w\u0142asn\u0105 dzia\u0142alno\u015b\u0107 gospodarcz\u0105 i wtedy"
+    },
+    {
+        "id": 29,
+        "query": "W windowsie jest ten sam problem"
+    },
+    {
+        "id": 30,
+        "query": "baran"
+    },
+    {
+        "id": 31,
+        "query": "diwio\u0142pers"
+    },
+    {
+        "id": 32,
+        "query": "Wspomnienie o alkoholu"
+    },
+    {
+        "id": 33,
+        "query": "W\u0142oski strajk"
+    },
+    {
+        "id": 34,
+        "query": "'Nie obchodzi mnie \u017ce mnie wzolni\u0105'"
     }
 ]

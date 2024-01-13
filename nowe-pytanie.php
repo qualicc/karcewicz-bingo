@@ -17,12 +17,15 @@
     <!-- MESSAGE BOX -->
     <?php
         session_start();
-        if (is_array($_SESSION['message'])) {
-            echo "<div id='message'> <div class='message-box message-" . $_SESSION['message']['type'] . "'>
-            " . $_SESSION['message']['text'] . "
-                <button type='button' id='hide-message-box' class='btn btn-light mt-2 mb-1'>OK!</button>
-            </div></div>";
-            $_SESSION['message'] = false;
+        if (isset($_SESSION['message'])) {
+            if (is_array($_SESSION['message'])) {
+                echo "<div id='message'> <div class='message-box message-" . $_SESSION['message']['type'] . "'>
+                " . $_SESSION['message']['text'] . "
+                    <button type='button' id='hide-message-box' class='btn btn-light mt-2 mb-1'>OK!</button>
+                </div></div>";
+                $_SESSION['message'] = false;
+            }
+
         }
 
     ?>

@@ -138,3 +138,17 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+
+tr{
+    width: 100%;
+}
+tr th:first-child{
+    width: 30px;
+}
+tr th:last-child{
+    right: 0px;
+}
+tbody{
+    width: 100%;
+}

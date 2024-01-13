@@ -4,17 +4,28 @@ session_start();
 if(!empty($_POST['password']) &&
 !empty($_POST['submit']))
 {
-    $password = '$2y$10$UJ6HWtLKrpdU3fdhQDz5/.uqThytSd3HlSEX9MdjxBKa4zc7VNLy6';
+    echo "1";
+    $password = '$2y$10$xsuntEwgUHkC5F6bSJ95K.If7sDbISUoNDnoo3YEt5hZbW4sKwFl.';
     if (password_verify($_POST['password'], $password)) {
+        echo "2";
         $_SESSION['ADMIN'] = true;
-        header('Location: lista.php');
+        header('Location: /lista.php');
     }
     
 }
-print_r($_POST);
+else{
+    print_r($_POST);
+    $_SESSION['message'] = array(
+        'type' => "fail",
+        'text' => "Błędne dane"
+    );
+    header('Location: /admin.php');
+}
+echo "3";
+
 $_SESSION['message'] = array(
     'type' => "fail",
     'text' => "Błędne dane"
 );
-header('Location: admin.php');
+header('Location: /admin.php');
 ?>

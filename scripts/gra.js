@@ -48,8 +48,8 @@ $(document).ready(function() {
                 }
             }
             if (win) {
-                var playerName = prompt('Gratulacje! Wprowadź swoją nazwę:');
-                if (playerName !== 'anonom') {
+                var playerName = prompt('Gratulacje! Wprowadź swój email (opcjonalnie):');
+                if (playerName !== 'anonim') {
                     alert('Wygrałeś!');
                     location.replace("sendemail.php?name=" + playerName);
                 }
