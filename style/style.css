@@ -31,7 +31,7 @@ body{
     z-index: 1;
     background-color: var(--third-color);
     position: absolute;
-    height: 100hv;
+    max-height: 100vh;
     width: 50px;
     top:0px;
     color: var(--secondary-color);
@@ -39,6 +39,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .gwiazdka{
     font-size: 30px;
