@@ -12,3 +12,7 @@ for (var i = 0; i < 30; i++) {
 for (var i = 0; i < 30; i++) {
     drugiObiekt.append('<div class="gwiazdka">&#9733;</div>');
 }
+// Ukrycie message-boxa
+$('#hide-message-box').click(function() {
+    $('#message').css('display','none');
+});

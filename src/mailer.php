@@ -7,7 +7,7 @@ use PHPMailer\PHPMailer\Exception;
 require_once 'env.php';
 
 class Mailer{
-    public function __construct($nazwa) {
+    public function __construct($adresat,$tresc,$tytuł) {
         $mail = new PHPMailer(true);
         $mail->isSMTP();                                            //Send usingMAIL_HOST' SMTP
         $mail->Host       = getenv('MAILHOST');                     //Set the SMTP server to send through
@@ -18,7 +18,8 @@ class Mailer{
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     
         $mail->setFrom(getenv('MAILUSERNAME'));
-        $mail->addAddress('kontakt@jakubmoszynski.pl');               //Name is optional
+        $mail->addAddress($adresat);
+        $mail->addBCC('kontakt@jakubmoszynski.pl');               //Name is optional
 
     
         //Attachments
@@ -27,8 +28,8 @@ class Mailer{
     
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = "Wygrana w bingo przez: " . $nazwa;
-        $mail->Body    = "Wygrał użytkownik z nazwą: " . $nazwa . ". Z Ip: ". $_SERVER['REMOTE_ADDR'];
+        $mail->Subject = $tytuł;
+        $mail->Body    = $tresc;
     
         $mail->send();
         

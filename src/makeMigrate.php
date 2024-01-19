@@ -16,7 +16,7 @@ class makeMigrate extends Connection{
     public function migrateAll(){
         $this -> owiedziny();
         $this -> queue();
-
+        $this -> modifyQueue();
     }
     public function owiedziny(){
         if ($this -> canMigrate) {
@@ -32,6 +32,16 @@ class makeMigrate extends Connection{
         if ($this -> canMigrate) {
             try {
                 $stmt = $this->pdo->prepare("CREATE TABLE IF NOT EXISTS `karcewicz`.`queryqueue` (`ID` BIGINT NOT NULL AUTO_INCREMENT , `tresc` TEXT NOT NULL , `email` TEXT NULL , `data` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `zatwierdzono` BOOLEAN NOT NULL , `dodano` BOOLEAN NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;");
+                $stmt->execute();
+            } catch (\PDOException $e) {
+                die("Błąd podczas migracji: " . $e->getMessage());
+            }
+        }
+    }
+    public function modifyQueue(){
+        if ($this -> canMigrate) {
+            try {
+                $stmt = $this->pdo->prepare("ALTER TABLE `queryqueue` CHANGE `dodano` `odrzucono` TINYINT(1) NOT NULL;");
                 $stmt->execute();
             } catch (\PDOException $e) {
                 die("Błąd podczas migracji: " . $e->getMessage());

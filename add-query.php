@@ -9,13 +9,13 @@ if(!empty($_POST['query']) &&
 !empty($_POST['submit']))
 {
 
-    $mail = new AddQuery($_POST['query'],$_POST['email']);
-    if ($mail) {
+    $adder = new AddQuery();
+    $adder -> addProposition($_POST['query'],$_POST['email']);
+    if ($adder) {
         $_SESSION['message'] = array(
             'type' => "success",
             'text' => "Wysłano prawidłowo. Poczekaj na rozpatrzenie"
         );
-        $_POST['query'] = "";
     }
     else {
         $_SESSION['message'] = array(
@@ -24,5 +24,5 @@ if(!empty($_POST['query']) &&
         );
     }
 }
-header('Location: index.php');
+header('Location: nowe-pytanie.php');
 ?>

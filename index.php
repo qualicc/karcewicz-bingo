@@ -30,7 +30,6 @@ $one = new newEnter();
     <div id="pasek-right" class="pasek"></div>
     <div id="pasek-left" class="pasek"></div>
     <div id="imageTitle" ></div>
-
     <div class="content mt-5">
         <a href="gra" class="button-74 mb-5" role="button">Zagraj</a> 
         <a href="nowe-pytanie" class="button-74 mb-5" role="button">Dodaj pytanie</a> 
