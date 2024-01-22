@@ -2,6 +2,8 @@
 
 namespace Vendor\KarcewiczBingo;
 
+use PDO;
+
 require_once 'env.php';
 
 class Connection {
