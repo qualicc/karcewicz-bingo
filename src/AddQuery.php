@@ -9,7 +9,7 @@ use PDO;
 class AddQuery extends Connection {
     public function __construct() {
 
-        parent::__construct(); // Wywołaj konstruktor klasy Connection
+        parent::__construct();
      
     }
     public function addProposition($tresc, $email = null) 
@@ -23,6 +23,7 @@ class AddQuery extends Connection {
             die("Błąd podczas dodawania rekordu: " . $e -> getMessage());
         }
     }
+    // wprowadź dane i save
     public function accept($id)
     {
         try {
@@ -36,6 +37,7 @@ class AddQuery extends Connection {
             die("Błąd podczas dodawania rekordu: " . $e -> getMessage());
         }
     }
+    // 1:1
     public function cancel($id)
     {
         try {
@@ -48,6 +50,8 @@ class AddQuery extends Connection {
             die("Błąd podczas dodawania rekordu: " . $e -> getMessage());
         }
     }
+    // 1:1
+
     private function sendEmail($id,$tytuł,$tresc)
     {
         $email = $this -> getEmail($id);
@@ -55,6 +59,7 @@ class AddQuery extends Connection {
             $mail = New Mailer($email, $tytuł, $tresc);
         }
     }
+    //daj do kontrolera
     private function getEmail($id)
     {
         try {
@@ -69,6 +74,7 @@ class AddQuery extends Connection {
             die("Błąd podczas dodawania rekordu: " . $e -> getMessage());
         }
     }
+    // pobierz z modelu
     private function getTresc($id)
     {
         try {
@@ -82,6 +88,7 @@ class AddQuery extends Connection {
             die("Błąd podczas dodawania rekordu: " . $e -> getMessage());
         }
     }
+      // pobierz z modelu
     private function addToJson($tresc)
     {
         $jsonFile = file_get_contents('query.json');
@@ -100,4 +107,5 @@ class AddQuery extends Connection {
 
         file_put_contents('query.json', $jsonUpdated);
     }
+    //daj do kontrolera
 }

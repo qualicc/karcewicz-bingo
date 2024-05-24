@@ -1,5 +1,5 @@
 <?php
-namespace Vendor\KarcewiczBingo;
+namespace Vendor\KarcewiczBingo\Controllers;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

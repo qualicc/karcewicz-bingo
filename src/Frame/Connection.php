@@ -1,12 +1,12 @@
 <?php
 
-namespace Vendor\KarcewiczBingo;
+namespace Vendor\KarcewiczBingo\Frame;
 
 use PDO;
 
 require_once 'env.php';
 
-class Connection {
+abstract class Connection {
     protected $pdo;
 
     public function __construct() {
