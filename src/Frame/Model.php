@@ -6,8 +6,8 @@ use Vendor\KarcewiczBingo\Frame\Connection;
 use Vendor\KarcewiczBingo\Models\Error;
 abstract class Model extends Connection
 {
-    private $tableName, $attributes = [];
-
+    protected $tableName, $attributes = [];
+    protected static $fieldMap = [];
 
     // Publics
 
@@ -74,12 +74,22 @@ abstract class Model extends Connection
         }
     }
 
-    public static function where($field, $operator, $value) {
+    public static function where($conditions) {
         $calledClass = get_called_class();
         $tableName = $calledClass::TABLE_NAME;
 
-        $field = static::$fieldMap[$field] ?? $field;
-        $sql = "SELECT * FROM $tableName WHERE $field $operator ?";
+        $sql = "SELECT * FROM $tableName WHERE ";
+        $params = [];
+        $clauses = [];
+
+        foreach ($conditions as $condition) {
+            list($field, $operator, $value) = $condition;
+            $field = static::$fieldMap[$field] ?? $field;
+            $clauses[] = "$field $operator ?";
+            $params[] = $value;
+        }
+
+        $sql .= implode(' AND ', $clauses);
         $data = $this -> pdo -> prepare($sql);
         $data -> execute();
         $results = $data -> fetchAll(PDO::FETCH_ASSOC);
