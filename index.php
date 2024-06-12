@@ -31,8 +31,8 @@ $one = new newEnter();
     <div id="pasek-left" class="pasek"></div>
     <div id="imageTitle" ></div>
     <div class="content mt-5">
-        <a href="gra" class="button-74 mb-5" role="button">Zagraj</a> 
-        <a href="nowe-pytanie" class="button-74 mb-5" role="button">Dodaj pytanie</a> 
+        <a href="gra.php" class="button-74 mb-5" role="button">Zagraj</a> 
+        <a href="nowe-pytanie.php" class="button-74 mb-5" role="button">Dodaj pytanie</a> 
         <a href="https://buycoffee.to/qualicc" class="button-74 mb-5" role="button">Postaw kawę</a> 
 
     </div>
