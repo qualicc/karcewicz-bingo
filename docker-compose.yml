@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: karcewicz-bingo
+    ports:
+      - "9000:80"
+    volumes:
+      - .:/var/www
+    networks:
+      - my-network
+
+
+volumes:
+  db_data:
+
+networks:
+  my-network:
